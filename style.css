@@ -1,0 +1,418 @@
+/* aqui é o cabeçalho ou header, toda a parte de estilo do cabeçalho  */
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2b2c2c;
+    color: #eee;
+    margin: 0;
+  }
+
+
+/******************** BLOCO COM A FOTO DE PERFIL********************/
+#perfil {
+    height: 600px;
+    width: 520px;
+    background-color: #2b2c2c;
+    float: left;
+}
+
+#perfil .centro{
+    top: 150px;
+    position: relative;
+    left: 100px;
+    border-radius: 100%;
+    overflow: hidden;
+    height: 300px;
+    width:300px;
+    float: center;
+}
+
+#perfil .image-container {
+    width: 300px;
+    height: 300px;
+}
+
+/********************INTRODUÇÃO NOME, INFOS E IMAGENS********************/
+
+#cabecalho {
+    height: 600px;
+    width: 1518px;
+    background-color: #2d2e2e;
+}
+
+.image-icon{
+    width: 75px;
+    height: 75px;
+    display: inline-flex;
+}
+
+.nome{
+    position: relative;
+    background-color: #2d2e2e;
+    top: 150px;
+    right: 500px;
+    height: 150px;
+    width: 400px;
+    float: right;
+}
+
+.info{
+    position: relative;
+    background-color: #2d2e2e;
+    height: 100px;
+    width: 200px;
+    float: right;
+    right: 100px;
+    top: 200px;
+}
+
+.icon{
+    position: relative;
+    background-color: #2d2e2e;
+    top: 150px;
+    left: 300px;
+    height: 150px;
+    width: 400px;
+    float: right;
+    text-align: center;
+}
+
+.fontNome1 {
+    font-family:"Montserrat";
+    font-size: 48px;
+    margin: 0;
+    color: bisque;
+    text-align: left;
+}
+
+.fontNome2 {
+    font-family: "Montserrat";
+    font-size: 48px;
+    margin: 0;
+    color: bisque;
+    text-align: left;
+}
+.fontNome3 {
+    font-family: "Montserrat";
+    margin: 0;
+    color: bisque;
+    text-align: left;
+}
+
+.fontMenu {
+    font-family: "Montserrat";
+    color: bisque;
+}
+
+.montserrat {
+    font-family: "Montserrat";
+    font-optical-sizing: auto;
+    font-weight: 10;
+    font-style: normal;
+  }
+
+/******************** BOTÃO ********************/
+
+.botao{
+    position: relative;
+    top: 20px;
+    font-family: "montserrat";
+    font-weight: 700;
+    border-color: bisque;
+    border-radius: 0% 10px 10px 10px;
+    color: bisque;
+    background-color: #2b2c2c;
+    cursor: pointer;
+    transition: 0.2s ease;
+    height: 45px;
+    width: 200px;
+}
+
+.botao:active{
+    transform: scale(0.96);
+}
+
+
+/******************** INTRODUÇÃO ********************/ 
+
+
+#intro {
+    height: 600px;
+    width: 520px;
+    background-color: #2d2e2e;
+    float: left;
+}
+.tam{
+    position: relative;
+    height: 100px;
+    width: 100px;
+    left: 420px;
+}
+.introducao{
+    top: 20px;
+    position: relative;
+    margin: 0;
+    background-color: #2b2c2c;
+    font-family: "Montserrat";
+    color: #ffc107;
+    text-align: left;
+    right: 40px;
+
+}
+
+/******************** RESUMO SOBRE MIM  ********************/
+#sobre {
+    height: 600px;
+    width: 1518px;
+    background-color: #2b2c2c;
+}
+
+.bloco1{
+    top: 15px;
+    position: relative;
+    right: 200px;
+    height: 280px;
+    width: 700px;
+    background-color: #2b2c2c;
+    float: right;
+    bottom: 96px;
+}
+.introducao2{
+    
+    position: relative;
+    margin: 0;
+    background-color: #2b2c2c;
+    font-family: "Montserrat";
+    color: bisque;
+    text-align: left;
+    line-height: 25px;
+
+}
+
+
+
+
+
+
+/******************** SKILLS  ********************/
+
+
+.skill {
+    height: 600px;
+    width: 520px;
+    background-color: #2b2c2c;
+    float: left;
+}
+
+#progress {
+    height: 600px;
+    width: 1518px;
+    background-color: #2d2e2e;
+}
+
+.container {
+    position: relative;
+    top: 10px;
+    bottom:0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+    height: 100vh;
+  }
+  
+  .skill-bar {
+    position: relative;
+    width: 80%;
+    height: 20px;
+    background-color: #333;
+    margin: 10px 0;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .skill-bar .progress {
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background-color: #ffc107;
+    transition: width 0.5s ease;
+  }
+  
+  .skill-bar .skill-name {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Montserrat";
+    color:  #333  ;
+    ;
+  }
+  
+  .skill-bar .percentage {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    font-size: 14px;
+    color: bisque;
+  }
+
+
+  /******************** FORMAÇÃO ACADEMICA  ********************/
+
+
+
+  #academico {
+    height: 600px;
+    width: 520px;
+    background-color: rgb(55, 0, 255);
+    float: left;
+}
+
+#faculdade {
+    height: 600px;
+    width: 1518px;
+    background-color:#2b2c2c;
+}
+
+
+.for1{
+    position: relative;
+    background-color: #2b2c2c;
+    top: 10px;
+    right: 500px;
+    height: 190px;
+    width: 400px;
+    float: right;
+}
+
+.for2{
+    position: relative;
+    background-color: #2b2c2c;
+    top: 10px;
+    left: 350px;
+    height: 190px;;
+    width: 400px;
+    float: right;
+
+}
+
+.for3{
+    position: relative;
+    background-color: #2b2c2c;
+    top: 100px;
+    right: 500px;
+    height: 200px;
+    width: 400px;
+    float: right;
+}
+
+
+.for4{
+    position: relative;
+    background-color: #2b2c2c;
+    top: 100px;
+    left: 350px;
+    height: 200px;
+    width: 400px;
+    float: right;
+ 
+} 
+
+
+
+/******************** EXPERIÊNCIA PROFISSIONAL  ********************/
+ h4{
+    text-align: center;
+    font-size: large;
+    color: #ffc107;
+    font-family: "montserrat";
+ }
+ h5{
+    text-align: center;
+    font-family: "montserrat";
+    color: bisque;
+ }
+ 
+ li{
+    color: bisque;
+ }
+
+ .tam1{
+    position: relative;
+    height: 100px;
+    width: 100px;
+    left: 400px;
+}
+#experiencia {
+    height: 600px;
+    width: 520px;
+    background-color: #2b2c2c;
+    float: left;
+}
+
+#dadosExp {
+    height: 600px;
+    width: 1518px;
+    background-color: #2d2e2e;
+}
+
+.exp1{
+    position: relative;
+    background-color: #2d2e2e;
+    top: 10px;
+    right: 500px;
+    height: 190px;
+    width: 400px;
+    float: right;
+}
+
+.exp2{
+    position: relative;
+    background-color: #2d2e2e;
+    top: 10px;
+    left: 350px;
+    height: 190px;;
+    width: 400px;
+    float: right;
+
+}
+
+.exp3{
+    position: relative;
+    background-color: #2d2e2e;
+    top: 150px;
+    right: 500px;
+    height: 200px;
+    width: 400px;
+    float: right;
+}
+
+
+.exp4{
+    position: relative;
+    background-color: #2d2e2e;
+    top: 150px;
+    left: 350px;
+    height: 200px;
+    width: 400px;
+    float: right;
+} 
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #ffc107;
+    border-radius: 20px;
+
+}
+
+
+
+/******************** FINAL  ********************/
